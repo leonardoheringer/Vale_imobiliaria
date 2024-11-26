@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vale Imóveis</title>
+    <link rel="shortcut icon" href="img/logo/Vale (7).png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <header>
+    <!-- Navbar -->
+    <div class="logo-nav">
+        <a href="index.html">
+        <img src="img/logo/Vale (8).png" id="logo" alt="">
+    </a>
+</div>  
+    <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm">
+        <div class="container">
+            
+            <!-- Botão para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Links de Navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saiba mais sobre nossa empresa">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imoveis.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Veja os imóveis disponíveis">Imóveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fale conosco">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Entre em Contato Conosco</h1>
+            <p class="lead">Estamos prontos para ajudar você a encontrar o imóvel perfeito.</p>
+        </div>
+        </div>
+    </header>
+
+   
+    <section id="contato" class="bg-light py-5 mt-1">
+        <div class="container">
+            <h2 class="text-center mb-4">Fale Conosco</h2>
+            <form id="formContato" action="/enviar-contato" method="post" role="form" aria-label="Formulário de contato">
+                <div class="form-group mb-3">
+                    <label for="nome" class="form-label">Nome completo</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="nome" class="form-label">Assunto</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o assunto" required>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                   
+                    <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar Mensagem</button>
+                </div>
+            </form> 
+        </div>
+    </section>
+    <!-- Localização Section -->
+    <section id="localizacao" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossa Localização</h2>
+            <div class="row">
+                <!-- Informações de Contato -->
+                <div class="col-md-6 mb-4">
+                    <p><strong>Endereço:</strong></p>
+                    <p>R. Vinhático, 50 - Horto</p>
+                    <p>Ipatinga, Minas-Gerais - CEP  35160-317</p>
+                    <p><strong>Telefone:</strong> (11) 4002-8922</p>
+                    <p><strong>Email:</strong> contato@valeimoveis.com.br</p>
+                </div>
+                <!-- Abas para Google Maps e Street View -->
+                <div class="col-md-6">
+                    <!-- Abas -->
+                    <ul class="nav nav-tabs" id="mapTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="map-tab" data-bs-toggle="tab" data-bs-target="#map" type="button" role="tab" aria-controls="map" aria-selected="true">
+                                Google Maps
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="streetview-tab" data-bs-toggle="tab" data-bs-target="#streetview" type="button" role="tab" aria-controls="streetview" aria-selected="false">
+                                Street View
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Conteúdo das Abas -->
+                    <div class="tab-content mt-3" id="mapTabsContent">
+                        <!-- Google Maps -->
+                        <div class="tab-pane fade show active" id="map" role="tabpanel" aria-labelledby="map-tab">
+                            <div class="ratio ratio-16x9">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.851240342872!2d-42.57452082389579!3d-19.505034925217867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5551539d35349%3A0xf11ced1d8b201341!2sR.%20Vinh%C3%A1tico%2C%2050%20-%20Horto%2C%20Ipatinga%20-%20MG%2C%2035160-317!5e0!3m2!1spt-BR!2sbr!4v1732591450408!5m2!1spt-BR!2sbr" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                        <!-- Street View -->
+                        <div class="tab-pane fade" id="streetview" role="tabpanel" aria-labelledby="streetview-tab">
+                            <div class="ratio ratio-16x9">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!4v1732591407098!6m8!1m7!1sQTVILOo0sUJugN8VbwQ2rg!2m2!1d-19.50532507319135!2d-42.57178749796691!3f180.89509656759503!4f-6.466354805470488!5f0.7820865974627469" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Imobiliária Exemplo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function limparFormulario() {
+            document.getElementById("formContato").reset();
+        }
+    
+        function enviarFormulario() {
+            const form = document.getElementById("formContato");
+            if (form.checkValidity()) {
+                const modal = new bootstrap.Modal(document.getElementById("Mensagem"));
+                modal.show();
+                limparFormulario();
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade" id="Mensagem" tabindex="-1" aria-labelledby="MensagemLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-success" id="MensagemLabel">Mensagem Enviada com Sucesso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Obrigado por entrar em contato! Retornaremos o mais breve possível.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
