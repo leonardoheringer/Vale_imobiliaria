@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Imóvel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/detalhes.css">
+</head>
+<body>
+    <div class="container">
+       
+        <div id="property-details" class="row mt-4">
+            <!-- Os detalhes do imóvel serão preenchidos dinamicamente -->
+        </div>
+    </div>
+
+    <script>
+        // Dados dos imóveis
+        const properties = {
+            1: {
+                title: "Apartamento no Iguaçu",
+                price: "R$ 430.000",
+                description: "Este lindo apartamento possui 3 quartos, 2 banheiros e uma vista incrível para o rio. Ideal para famílias ou quem busca conforto e tranquilidade.",
+                images: [
+                    "img/Apartamentos/Apartamento 1/img (1).jpg",
+                    "img/Apartamentos/Apartamento 1/img (2).jpg",
+                    "img/Apartamentos/Apartamento 1/img (3).jpg"
+                ]
+            },
+            2: {
+                title: "Casa com Piscina",
+                price: "R$ 950.000",
+                description: "Espaçosa casa com 5 quartos (2 suítes), ampla área gourmet, e uma piscina perfeita para reuniões familiares ou momentos de lazer.",
+                images: [
+                    "img/Apartamentos/Apartamento 2/Imagem (1).jpg",
+                    "img/Apartamentos/Apartamento 2/Imagem (2).jpg",
+                    "img/Apartamentos/Apartamento 2/Imagem (3).jpg"
+                ]
+            },
+            3: {
+                title: "Cobertura de Luxo",
+                price: "R$ 1.500.000",
+                description: "Cobertura espetacular com 4 quartos, 3 suítes, terraço privativo e jacuzzi. Luxo e exclusividade no coração da cidade.",
+                images: [
+                    "img/Apartamentos/Apartamento 3/Imagem (1).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (2).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (3).jpg"
+                ]
+            }
+        };
+
+        // Obtém o ID da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const propertyId = urlParams.get('id');
+
+        if (propertyId && properties[propertyId]) {
+            const property = properties[propertyId];
+            const detailsContainer = document.getElementById('property-details');
+
+            // Monta o conteúdo dinâmico
+            detailsContainer.innerHTML = `
+                <div class="col-md-8">
+                    <h1>${property.title}</h1>
+                    <p class="text-muted">${property.price}</p>
+                    <p>${property.description}</p>
+                </div>
+                <div class="col-md-4">
+                    ${property.images.map(img => `<img src="${img}" alt="${property.title}">`).join('')}
+                </div>
+            `;
+        } else {
+            document.body.innerHTML = '<p class="text-danger">Imóvel não encontrado.</p>';
+        }
+    </script>
+</body>
+</html>

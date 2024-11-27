@@ -46,70 +46,131 @@
     <section class="py-5 bg-light">
         <div class="container">
             <h1 class="text-center mb-4">Nossos Imóveis</h1>
-            <div class="row g-4">
+            <hr class="divider">
+            <h1 class="text-start mb-3">Apartamentos</h1>
+            <div class="row g-4 mt-2">
                 <!-- Imóvel 1 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <div id="carouselExampleIndicators" class="carousel slide">
+                        <div id="carouselApartment1" class="carousel slide">
                             <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselApartment1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselApartment1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselApartment1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselApartment1" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="img/Apartamentos/Apartamento 1/img (1).jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="img/Apartamentos/Apartamento 1/img (2).jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="img/Apartamentos/Apartamento 1/img (4).jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="img/Apartamentos/Apartamento 1/img (3).jpg" class="d-block w-100" alt="...">
-                              </div>
+                                <div class="carousel-item active">
+                                    <img src="img/Apartamentos/Apartamento 1/img (1).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 1/img (2).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 1/img (4).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 1/img (3).jpg" class="d-block w-100" alt="...">
+                                </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselApartment1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselApartment1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
                             </button>
-                          </div>    
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Apartamento no Centro</h5>
-                            <p class="card-text">R$ 450.000 - 3 quartos, 2 banheiros e uma vista incrível.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                            <h5 class="card-title">Apartamento no Iguaçu</h5>
+                            <p class="card-text">R$ 430.000 - 3 quartos, 2 banheiros e uma vista incrível.</p>
+                            <button class="btn btn-primary" onclick="viewDetails(1)">Ver Detalhes</button>
                         </div>
                     </div>
                 </div>
                 <!-- Imóvel 2 -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem de Imóvel">
+                        <div id="carouselHouse1" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHouse1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselHouse1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselHouse1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselHouse1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Apartamentos/Apartamento 2/Imagem (1).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 2/Imagem (2).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 2/Imagem (3).jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Apartamentos/Apartamento 2/Imagem (4).jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHouse1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHouse1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Casa com Piscina</h5>
-                            <p class="card-text">R$ 950.000 - 5 quartos (2 suits), área gourmet e piscina.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                            <h5 class="card-title">Apartamento no Cidade Nobre</h5>
+                            <p class="card-text">R$ 810.000 - 3 quartos, 2 banheiros, área gourmet e piscina.</p>
+                            <button class="btn btn-primary" onclick="viewDetails(2)">Ver Detalhes</button>
                         </div>
                     </div>
                 </div>
                 <!-- Imóvel 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem de Imóvel">
-                        <div class="card-body">
-                            <h5 class="card-title">Cobertura de Luxo</h5>
-                            <p class="card-text">R$ 1.200.000 - Localização privilegiada com jacuzzi privativa.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
-                        </div>
-                    </div>
+             <!-- Imóvel 3 -->
+<div class="col-md-4">
+    <div class="card">
+        <div id="carouselApartment3" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselApartment3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselApartment3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselApartment3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselApartment3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Apartamentos/Apartamento 3/Imagem (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Apartamentos/Apartamento 3/Imagem (2).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Apartamentos/Apartamento 3/Imagem (3).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Apartamentos/Apartamento 3/Imagem (4).jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselApartment3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselApartment3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Apartamento no Esperança</h5>
+            <p class="card-text">R$ 375.000 - 3 quartos, 2 banheiros, varanda gourmet.</p>
+            <button class="btn btn-primary" onclick="viewDetails(3)">Ver Detalhes</button>
+        </div>
+    </div>
+</div>
+
         </div>
     </section>
 
@@ -118,7 +179,12 @@
             <p class="mb-0">&copy; 2024 Imobiliária Exemplo. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script>
+        function viewDetails(id) {
+            // Redireciona para a página de detalhes, passando o ID do imóvel na URL
+            window.location.href = `detalhes.html?id=${id}`;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
