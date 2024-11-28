@@ -47,32 +47,70 @@
                     "img/Apartamentos/Apartamento 3/Imagem (1).jpg",
                     "img/Apartamentos/Apartamento 3/Imagem (2).jpg",
                     "img/Apartamentos/Apartamento 3/Imagem (3).jpg"
+                ]   
+            },
+          4: {
+    titulo: "Cobertura de Luxo",
+    preco: "R$ 1.500.000",
+    descricao: "Linda casa com 3 quartos (1 suíte), sala/copa integrada, cozinha moderna, área gourmet, sacada e acabamento de primeira. Conta ainda com 170 m², 3 vagas de garagem, fachada contemporânea e excelente localização no Jardim Panorama.",
+    localizacao: "No coração do Jardim Panorama, próximo a tudo que você precisa.",
+    imagens: [
+        "img/Apartamentos/Apartamento 3/Imagem (1).jpg",
+        "img/Apartamentos/Apartamento 3/Imagem (2).jpg",
+        "img/Apartamentos/Apartamento 3/Imagem (3).jpg",
+    ]
+},
+
+            5: {
+                title: "Cobertura de Luxo",
+                price: "R$ 1.500.000",
+                description: "Cobertura espetacular com 4 quartos, 3 suítes, terraço privativo e jacuzzi. Luxo e exclusividade no coração da cidade.",
+                images: [
+                    "img/Apartamentos/Apartamento 3/Imagem (1).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (2).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (3).jpg",
+                  
                 ]
+                
+            },
+            6: {
+                title: "Cobertura de Luxo",
+                price: "R$ 1.500.000",
+                description: "Cobertura espetacular com 4 quartos, 3 suítes, terraço privativo e jacuzzi. Luxo e exclusividade no coração da cidade.",
+                images: [
+                    "img/Apartamentos/Apartamento 3/Imagem (1).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (2).jpg",
+                    "img/Apartamentos/Apartamento 3/Imagem (3).jpg",
+                  
+                ]
+                
             }
         };
 
         // Obtém o ID da URL
         const urlParams = new URLSearchParams(window.location.search);
-        const propertyId = urlParams.get('id');
+const propertyId = urlParams.get('id');
 
-        if (propertyId && properties[propertyId]) {
-            const property = properties[propertyId];
-            const detailsContainer = document.getElementById('property-details');
+if (propertyId && properties[propertyId]) {
+    const property = properties[propertyId];
+    const detailsContainer = document.getElementById('property-details');
 
-            // Monta o conteúdo dinâmico
-            detailsContainer.innerHTML = `
-                <div class="col-md-8">
-                    <h1>${property.title}</h1>
-                    <p class="text-muted">${property.price}</p>
-                    <p>${property.description}</p>
-                </div>
-                <div class="col-md-4">
-                    ${property.images.map(img => `<img src="${img}" alt="${property.title}">`).join('')}
-                </div>
-            `;
-        } else {
-            document.body.innerHTML = '<p class="text-danger">Imóvel não encontrado.</p>';
-        }
+    // Monta o conteúdo dinâmico
+    detailsContainer.innerHTML = `
+        <div class="col-md-8">
+            <h1>${property.titulo}</h1>
+            <p class="text-muted">${property.preco}</p>
+            <p>${property.descricao}</p>
+              <p><strong>${property.localizacao}</strong></p>
+        </div>
+        <div class="col-md-4">
+            ${property.imagens.map(img => `<img src="${img}" alt="${property.titulo}" class="img-fluid mb-2">`).join('')}
+        </div>
+    `;
+} else {
+    document.body.innerHTML = '<p class="text-danger">Imóvel não encontrado.</p>';
+}
+
     </script>
 </body>
 </html>
