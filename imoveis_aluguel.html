@@ -35,8 +35,8 @@
                               Imóveis
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item text-danger" href="imoveis.html">Compra</a></li>
-                              <li><a class="dropdown-item " href="imoveis_aluguel.html">Alguel</a></li>
+                              <li><a class="dropdown-item" href="imoveis.html">Compra</a></li>
+                              <li><a class="dropdown-item text-danger" href="imoveis_aluguel.html">Alguel</a></li>
                              
                             </ul>
                           </li>
@@ -48,6 +48,7 @@
             </div>
         </nav>
         </header>
+
     <!-- Imóveis -->
     <section class="py-5 bg-light">
         <div class="container">
@@ -90,7 +91,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Apartamento no Iguaçu</h5>
-                            <p class="card-text">R$ 430.000 - 3 quartos, 2 banheiros e uma vista incrível.</p>
+                            <p class="card-text">R$ 1.300 - 3 quartos, 2 banheiros, 1 vaga de garagem e uma vista incrível.</p>
                             <button class="btn btn-primary" onclick="viewDetails(1)">Ver Detalhes</button>
                         </div>
                     </div>
@@ -130,7 +131,7 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Apartamento no Cidade Nobre</h5>
-                            <p class="card-text">R$ 810.000 - 3 quartos, 2 banheiros, área gourmet e piscina.</p>
+                            <p class="card-text">R$ 2.300 - 3 quartos, 2 banheiros, área gourmet e piscina.</p>
                             <button class="btn btn-primary" onclick="viewDetails(2)">Ver Detalhes</button>
                         </div>
                     </div>
@@ -171,7 +172,7 @@
         </div>
         <div class="card-body">
             <h5 class="card-title">Apartamento no Esperança</h5>
-            <p class="card-text">R$ 375.000 - 3 quartos, 2 banheiros, varanda gourmet.</p>
+            <p class="card-text">R$ 1.100 - 3 quartos, 2 banheiros, varanda gourmet para churrasco.</p>
             <button class="btn btn-primary" onclick="viewDetails(3)">Ver Detalhes</button>
         </div>
     </div>
@@ -222,7 +223,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Casa no Jardim Panorama</h5>
-                        <p class="card-text">R$ 950.000 - 3 quartos, 3 banheiros e uma vista incrível.</p>
+                        <p class="card-text">R$ 2.700 - 3 quartos, 3 banheiros, 2 vagas de garagem e uma vista incrível.</p>
                         <button class="btn btn-primary" onclick="viewDetails(4)">Ver Detalhes</button>
                        
                     </div>
@@ -261,9 +262,9 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> 
                         <h5 class="card-title">Casa no Vila Ipanema</h5>
-                        <p class="card-text">R$ 790.000 - 3 quartos, 2 banheiros, área gourmet e piscina.</p>
+                        <p class="card-text">R$ 2.500 - 3 quartos, 2 banheiros, área gourmet e piscina.</p>
                         <button class="btn btn-primary" onclick="viewDetails(5)">Ver Detalhes</button>
                     </div>
                 </div>
@@ -304,7 +305,7 @@
     </div>
     <div class="card-body">
         <h5 class="card-title">Casa no Vila Ipanema</h5>
-        <p class="card-text">R$ 950.000 - 3 quartos, 3 banheiros, varanda gourmet.</p>
+        <p class="card-text">R$ 3.000 - 3 quartos, 3 banheiros, varanda gourmet para churrasco.</p>
         <button class="btn btn-primary" onclick="viewDetails(6)">Ver Detalhes</button>
     </div>
 </div>
@@ -328,7 +329,7 @@
     <script>
         function viewDetails(id) {
             // Redireciona para a página de detalhes, passando o ID do imóvel na URL
-            window.location.href = `detalhes.html?id=${id}`;
+            window.location.href = `detalhes_aluguel.html?id=${id}`;
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

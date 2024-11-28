@@ -30,9 +30,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Saiba mais sobre nossa empresa">Sobre</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link   " href="imoveis.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Veja os imóveis disponíveis">Imóveis</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Imóveis
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="imoveis.html">Compra</a></li>
+                          <li><a class="dropdown-item " href="imoveis_aluguel.html">Alguel</a></li>
+                         
+                        </ul>
+                      </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fale conosco">Contato</a>
                     </li>
@@ -41,9 +48,9 @@
         </div>
     </nav>
     
-          <div class="container-fluid">
-            <section id="imoveis" class="py-5">
-                <div class="container-fluid"">
+          
+            <section id="imoveis" class="">
+              
                     <header class="bg-primary text-white text-center py-5">
                         <div class="container">
                             <h1>Bem-vindo à Imobiliária Exemplo</h1>
@@ -56,15 +63,15 @@
                 
                     <!-- Destaque de Imóveis -->
                     <section id="imoveis" class="py-5 bg-light">
-                        <div class="container-fluid">
+                        <div class="container">
                             <h2 class="text-center mb-4">Imóveis em Destaque</h2>
                             <div class="row g-4">
                                 <!-- Card 1 -->
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem de Imóvel">
+                                        <img src="img/Apartamentos/Apartamento 1/img (1).jpg" class="card-img-top" alt="Imagem de Imóvel">
                                         <div class="card-body">
-                                            <h5 class="card-title">Apartamento Luxuoso</h5>
+                                            <h5 class="card-title">Apartamento no Iguaçu</h5>
                                             <p class="card-text">Localização excelente no centro da cidade, com 3 quartos e 2 banheiros.</p>
                                             <a href="imoveis.html" class="btn btn-primary">Ver Detalhes</a>
                                         </div>
@@ -73,10 +80,10 @@
                                 <!-- Card 2 -->
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem de Imóvel">
+                                        <img src="img/Apartamentos/Apartamento 2/Imagem (1).jpg" class="card-img-top" alt="Imagem de Imóvel">
                                         <div class="card-body">
-                                            <h5 class="card-title">Casa Espaçosa</h5>
-                                            <p class="card-text">Perfeita para famílias grandes, com 5 quartos, piscina e jardim.</p>
+                                            <h5 class="card-title">Apartamento no Cidade Nobre</h5>
+                                            <p class="card-text">Perfeita para famílias grandes, com 3 quartos e área gourmet.</p>
                                             <a href="imoveis.html" class="btn btn-primary">Ver Detalhes</a>
                                         </div>
                                     </div>
@@ -84,9 +91,9 @@
                                 <!-- Card 3 -->
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Imagem de Imóvel">
+                                        <img src="img/Apartamentos/Casa 1/Img 1.jpg" class="card-img-top" alt="Imagem de Imóvel">
                                         <div class="card-body">
-                                            <h5 class="card-title">Cobertura Moderna</h5>
+                                            <h5 class="card-title">Casa no Jardim Panorama</h5>
                                             <p class="card-text">Vista incrível da cidade, com área gourmet e jacuzzi privativa.</p>
                                             <a href="imoveis.html" class="btn btn-primary">Ver Detalhes</a>
                                         </div>
@@ -104,7 +111,7 @@
     </main>
     <footer class="text-dark text-center py-4">
         <div class="container">
-            <p >&copy; 2024 Imobiliária Exemplo. Todos os direitos reservados.</p>
+            <p class="text-light">&copy; 2024 Imobiliária Exemplo. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    

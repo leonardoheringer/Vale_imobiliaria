@@ -20,18 +20,19 @@ h1 {
 }
 
 /* Preço do imóvel */
-.text-muted {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #28a745;
-    margin-bottom: 20px;
-}
+
 
 /* Descrição do imóvel */
 p {
     font-size: 1rem;
     line-height: 1.8;
     color: #555;
+}
+.preco {
+    font-size: 30px;
+    font-weight: 600;
+    color: #aa0a0a;
+    margin-bottom: 20px;
 }
 
 /* Galeria de imagens */
@@ -131,4 +132,29 @@ input {
 }
 .texto{
     color: white;
+}
+.Visita{
+    color: #000000bb;
+font-size: 34px;    
+}
+.Titulo{
+    color: #000000bb;
+    font-size: 45px;
+}
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#Mensagem{
+    padding-top: 10px;
 }
